@@ -11,19 +11,19 @@ class Config {
   private Flower flower_;
   private float rotSpeed_;
 
-  public color getBackground() {
+  color getBackground() {
     return bg_;
   }
 
-  public int getCanvasSize() {
+  int getCanvasSize() {
     return canvasSize_;
   }
 
-  public Flower getFlower() {
+  Flower getFlower() {
     return flower_;
   }
 
-  public float getRotationSpeed() {
+  float getRotationSpeed() {
     return rotSpeed_;
   }
 
