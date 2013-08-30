@@ -1,5 +1,6 @@
 {
 	"canvasSize": 32,
+	"scale": 1,
 	"foreground": "eeeeee",
 	"background": "222222",
 	"totalPetals": 12,

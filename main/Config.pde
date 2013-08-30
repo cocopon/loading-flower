@@ -29,17 +29,19 @@ class Config {
 
   void load(String path) {
     JSONObject json = loadJSONObject(path);
+    
+    float scale = json.getFloat("scale");
 
     bg_ = getColor(json.getString("background"));
-    canvasSize_ = json.getInt("canvasSize");
+    canvasSize_ = (int)(json.getInt("canvasSize") * scale);
     rotSpeed_ = json.getFloat("rotationSpeed");
 
     flower_ = new Flower(json.getInt("totalPetals"));
-    flower_.setRadius(json.getFloat("radius"));
+    flower_.setRadius(json.getFloat("radius") * scale);
 
     Petal petal = new Petal();
-    petal.setLength(json.getFloat("petalLength"));
-    petal.setWeight(json.getFloat("petalWeight"));
+    petal.setLength(json.getFloat("petalLength") * scale);
+    petal.setWeight(json.getFloat("petalWeight") * scale);
     petal.setRgb(getColor(json.getString("foreground")));
     flower_.setPetal(petal);
   }
