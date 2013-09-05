@@ -3,6 +3,7 @@
 	"scale": 1,
 	"foreground": "eeeeee",
 	"background": "222222",
+	"alphaRange": [0.0, 1.0],
 	"totalPetals": 12,
 	"rotationSpeed": 0.1,
 	"radius": 12.0,

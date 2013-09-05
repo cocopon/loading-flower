@@ -43,10 +43,17 @@ class Config {
     petal.setLength(json.getFloat("petalLength") * scale);
     petal.setWeight(json.getFloat("petalWeight") * scale);
     petal.setRgb(getColor(json.getString("foreground")));
+    petal.setAlphaRange(getRange(json.getJSONArray("alphaRange")));
     flower_.setPetal(petal);
   }
 
   private color getColor(String value) {
     return unhex("ff" + value);
+  }
+
+  private Range getRange(JSONArray value) {
+    return new Range(
+        value.getFloat(0),
+        value.getFloat(1));
   }
 }

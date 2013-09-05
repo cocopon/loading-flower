@@ -9,6 +9,7 @@ class Petal {
   protected color rgb_;
   protected float length_; 
   protected float weight_;
+  protected Range alphaRange_;
 
   color getRgb() {
     return rgb_;
@@ -32,6 +33,14 @@ class Petal {
 
   void setWeight(float weight) {
     weight_ = weight;
+  }
+
+  Range getAlphaRange() {
+    return alphaRange_;
+  }
+
+  void setAlphaRange(Range range) {
+    alphaRange_ = range;
   }
 
   void render(PGraphics pg, float x, float y, float r, float angle, float value) {

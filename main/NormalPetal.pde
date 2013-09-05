@@ -7,7 +7,7 @@
  */
 class NormalPetal extends Petal {
   void render(PGraphics pg, float x, float y, float r, float angle, float value) {
-    pg.fill(rgb_, value * 255);
+    pg.fill(rgb_, alphaRange_.denormalize(value) * 255);
     pg.noStroke();
 
     pg.pushMatrix();
