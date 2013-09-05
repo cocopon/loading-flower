@@ -5,7 +5,8 @@
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
-static final String CONFIG_FILE = "../config.json";
+static final String CONFIG_BASE_DIR = "..";
+static final String CONFIG_FILE = "config.json";
 static final String OUTPUT_DIR = "../tmp";
 
 Config config_;
@@ -19,7 +20,7 @@ void setup() {
   rectMode(CENTER);
   shapeMode(CENTER);
 
-  config_ = new Config();
+  config_ = new Config(CONFIG_BASE_DIR);
   config_.load(CONFIG_FILE);
 
   int size = config_.getCanvasSize();

@@ -1,0 +1,17 @@
+{
+	"canvasSize": 32,
+	"scale": 1,
+	"background": "222222",
+
+	"totalPetals": 12,
+	"rotationSpeed": 0.1,
+	"radius": 12.0,
+
+	"petal": {
+		"type": "normal",
+		"alphaRange": [0.1, 1.0],
+		"color": "eeeeee",
+		"length": 5.0,
+		"weight": 2.0
+	}
+}

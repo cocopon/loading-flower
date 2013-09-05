@@ -1,13 +1,3 @@
 {
-	"canvasSize": 32,
-	"scale": 1,
-	"background": "222222",
-
-	"color": "eeeeee",
-	"alphaRange": [0.0, 1.0],
-	"totalPetals": 12,
-	"rotationSpeed": 0.1,
-	"radius": 12.0,
-	"petalLength": 5.0,
-	"petalWeight": 2.0
+	"preset": "preset/normal.json"
 }
