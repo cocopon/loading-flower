@@ -42,7 +42,7 @@ class Config {
     Petal petal = new NormalPetal();
     petal.setLength(json.getFloat("petalLength") * scale);
     petal.setWeight(json.getFloat("petalWeight") * scale);
-    petal.setRgb(getColor(json.getString("foreground")));
+    petal.setRgb(getColor(json.getString("color")));
     petal.setAlphaRange(getRange(json.getJSONArray("alphaRange")));
     flower_.setPetal(petal);
   }

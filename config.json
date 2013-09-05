@@ -1,8 +1,9 @@
 {
 	"canvasSize": 32,
 	"scale": 1,
-	"foreground": "eeeeee",
 	"background": "222222",
+
+	"color": "eeeeee",
 	"alphaRange": [0.0, 1.0],
 	"totalPetals": 12,
 	"rotationSpeed": 0.1,
