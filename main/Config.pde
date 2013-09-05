@@ -39,7 +39,7 @@ class Config {
     flower_ = new Flower(json.getInt("totalPetals"));
     flower_.setRadius(json.getFloat("radius") * scale);
 
-    Petal petal = new Petal();
+    Petal petal = new NormalPetal();
     petal.setLength(json.getFloat("petalLength") * scale);
     petal.setWeight(json.getFloat("petalWeight") * scale);
     petal.setRgb(getColor(json.getString("foreground")));
